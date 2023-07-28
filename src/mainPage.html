@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../CSS/styleMainPage.css" />
+    <script type="module" defer src="../scripts/main.js"></script>
+    <title>Kalakoht</title>
+  </head>
+  <body>
+    <!-- <h1>Main Page</h1> -->
+    <button id="myButton" class="map-button">
+      <i class="fas fa-map-marker-alt">centre map</i>
+    </button>
+    <button class="sign-out">Sign out</button>
+    <div id="map-container"></div>
+    <div class="modal hidden">
+      <input type="text" class="comment" placeholder="add a comment..." />
+      <button class="closeModal">X</button>
+
+      <button class="camera">camera</button>
+    </div>
+    <div class="modal-cam hidden">
+      <video class="player" autoplay></video>
+      <canvas class="canvas"> </canvas>
+      <button class="capture">
+        <i class="fas fa-camera"></i>
+      </button>
+      <button class="upload hidden">upload</button>
+    </div>
+    <!-- <div class="comment-box"></div> -->
+    
+      <div class="pic-box"></div>
+      <div class="comment-box"></div>
+    </div>
+  </body>
+</html>
+<!-- <button class="upload">Upload pic</button> -->

@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&family=Zeyada&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* background: linear-gradient(
+    to bottom right,
+    rgb(53, 53, 54),
+    rgb(216, 213, 213)
+  ); */
+  background: url('../img/kalal1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+h1 {
+  position: relative;
+  top: 350px;
+}
+
+h4 {
+  top: 400px;
+  position: absolute;
+  font-size: 14px;
+}
+
+#login-error-msg-holder {
+  position: relative;
+  width: 400px;
+  height: 50px;
+  top: 400px;
+  justify-items: center;
+  align-items: center;
+}
+
+#login-error-msg {
+  position: absolute;
+  width: 400px;
+  text-align: center;
+  margin: auto;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #0e0d0d;
+  border: 1px solid #7a7a7a;
+  background-color: #5c5b5b;
+  opacity: 0;
+}
+
+.button-create,
+.button-login {
+  width: 150px;
+  height: 30px;
+  color: #fff;
+  background-color: #131212;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 4px;
+  box-shadow: rgb(22, 24, 27) 0px 25px 30px -5px;
+  display: block;
+  margin: auto;
+  top: 50px;
+  cursor: pointer;
+}
+
+.button:active {
+  background-color: #4d504d;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#login-form {
+  position: relative;
+  top: 75px;
+  display: flex;
+  flex-direction: column; /* Modified */
+  align-items: center; /* Added */
+  margin: auto;
+  padding: 10px;
+}
+
+.form-field {
+  border: 0;
+  justify-items: auto;
+  font-size: 15px;
+  padding: 10px;
+  margin: 10px;
+  height: 25px;
+  border-radius: 3px;
+  box-shadow: rgb(22, 24, 27) 0px 25px 30px -5px;
+}
+
+.form-field:focus {
+  outline: none;
+}
+
+/* Media Query for viewport width less than 680px */
+@media (max-width: 680px) {
+  h1 {
+    top: 200px; /* Adjusted */
+  }
+  h4 {
+    top: 300px;
+  }
+  #login-error-msg-holder {
+    top: 300px; /* Adjusted */
+  }
+
+  #login-form {
+    top: 0; /* Adjusted */
+    height: auto;
+  }
+
+  .button-create,
+  .button-login {
+    top: 0; /* Adjusted */
+  }
+
+  .form-field {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
